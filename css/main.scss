@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+section {
+    width: 87%;
+    margin: 4em 1.5em 1.5em 1.5em;   //turns out it aligns the div to center and here i was thinking about alignment features LOL
+    border-radius: 10px;
+    height: 25em;
+
+    div {
+        height: 100%;
+        padding: 2.5em;
+        
+        > * {       //to apply a property to all child elements
+            margin: 0 0 23px 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-family: 'Big Shoulders Display';
+            font-size: 3em;
+            color: white;
+        }
+        
+        p {
+            font-weight: lighter;
+            color: rgb(216, 213, 213);
+            margin-bottom: 3em;
+            line-height: 1.5em;
+        }
+
+        a, p {
+            font-family: 'Lexend Deca';
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            border: 3px solid white;
+            border-radius: 5em;
+            padding: 0.7em 1.5em;
+        }
+    }
+
+    .box-1 {
+        border-radius: 10px 10px 0 0;
+        background: hsl(31, 77%, 52%);
+
+        a:hover {
+            background: white;
+            color: hsl(31, 77%, 52%);
+            transition-duration: 0.3s;
+        }
+    }
+
+    .box-2 {
+        background: hsl(184, 100%, 22%);
+
+        a:hover {
+            background: white;
+            color: hsl(184, 100%, 22%);
+            transition-duration: 0.3s;
+        }
+        
+    }
+
+    .box-3 {
+        background: hsl(179, 100%, 13%);
+        border-radius: 0 0 10px 10px;
+
+        a:hover {
+            background: white;
+            color: hsl(179, 100%, 13%);
+            transition-duration: 0.3s;
+        }
+        
+    }
+}
+
+.attribution {
+    font-size: 1em;
+    width: 80%;
+    font-family: 'Lexend Deca';
+    text-align: center;
+    margin: 0 auto;
+
+    a {
+        text-decoration: none;
+        color: hsl(184, 100%, 22%);
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    section {
+        display: flex;
+        margin: 6% auto 8% auto; 
+        width: 70%;
+
+        .box-1 {
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        .box-3 {
+            border-radius: 0px 10px 10px 0px;
+        }
+        
+        div {
+            p {
+                margin-bottom: 5em;
+                padding: 0;
+            }
+        }
+    }
+}
